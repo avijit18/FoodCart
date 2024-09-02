@@ -7,12 +7,10 @@ import com.FoodCart.Exceptions.FoodException;
 import com.FoodCart.Exceptions.RestaurantException;
 import com.FoodCart.Exceptions.UserException;
 import com.FoodCart.Requests.CreateFoodRequest;
-import com.FoodCart.Services.Interfaces.CategoryService;
 import com.FoodCart.Services.Interfaces.FoodService;
 import com.FoodCart.Services.Interfaces.RestaurantService;
 import com.FoodCart.Services.Interfaces.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

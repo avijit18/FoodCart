@@ -27,4 +27,7 @@ public class ApiResponse<T> {
         this();
         this.error = error;
     }
+
+    public ApiResponse(String restaurantDeletedWithIdSuccessfully, boolean b) {
+    }
 }

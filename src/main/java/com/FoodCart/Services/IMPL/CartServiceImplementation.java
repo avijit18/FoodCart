@@ -15,7 +15,6 @@ import com.FoodCart.Requests.AddCartItemRequest;
 import com.FoodCart.Services.Interfaces.CartService;
 import com.FoodCart.Services.Interfaces.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
