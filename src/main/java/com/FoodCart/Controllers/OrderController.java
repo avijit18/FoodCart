@@ -1,7 +1,7 @@
 package com.FoodCart.Controllers;
 
 import com.FoodCart.Entities.Order;
-import com.FoodCart.Entities.PaymentResponseDTO;
+import com.FoodCart.Response.PaymentResponseDTO;
 import com.FoodCart.Entities.UserEntity;
 import com.FoodCart.Exceptions.CartException;
 import com.FoodCart.Exceptions.OrderException;
@@ -34,6 +34,9 @@ public class OrderController {
             StripeException,
             OrderException {
         UserEntity user = userService.findUserProfileByJwt(jwt);
+        if (user == null || user.getId() == null) {
+            throw new UserException("User not found or not saved correctly.");
+        }
         System.out.println("req user " + user.getEmail());
         if (order != null) {
             PaymentResponseDTO res = orderService.createOrder(order, user);

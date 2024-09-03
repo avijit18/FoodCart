@@ -1,7 +1,7 @@
 package com.FoodCart.Services.IMPL;
 
 import com.FoodCart.Entities.Order;
-import com.FoodCart.Entities.PaymentResponseDTO;
+import com.FoodCart.Response.PaymentResponseDTO;
 import com.FoodCart.Services.Interfaces.PaymentService;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
@@ -20,23 +20,24 @@ public class PaymentServiceImplementation implements PaymentService {
     public PaymentResponseDTO generatePaymentLink(Order order) throws StripeException {
         Stripe.apiKey = stripeSecretKey;
 
+        String successUrl = "http://localhost:8080/payment/success/" + order.getId();
+
         SessionCreateParams params = SessionCreateParams.builder()
                 .addPaymentMethodType(SessionCreateParams.PaymentMethodType.CARD)
                 .setMode(SessionCreateParams.Mode.PAYMENT)
-                .setSuccessUrl("successUrl will be added" + order.getId()) // TODO
-                .setCancelUrl("cancelUrl will be added" + order.getId()) // TODO
+                .setSuccessUrl(successUrl) // TODO
+                .setCancelUrl("http://localhost:8080/payment/cancel/" + order.getId()) // TODO
                 .addLineItem(SessionCreateParams.LineItem.builder()
                         .setQuantity(1L)
                         .setPriceData(SessionCreateParams.LineItem.PriceData.builder()
                                 .setCurrency("usd")
                                 .setUnitAmount((long) order.getTotalAmount() * 100) // Specify the order amount in cents
                                 .setProductData(SessionCreateParams.LineItem.PriceData.ProductData.builder()
-                                        .setName("pizza burger")
+                                        .setName("Food Cart")
                                         .build())
                                 .build())
                         .build())
                 .build();
-
         Session session = Session.create(params);
         System.out.println("session _____ " + session);
 

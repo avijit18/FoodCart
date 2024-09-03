@@ -1,7 +1,7 @@
 package com.FoodCart.Services.Interfaces;
 
 import com.FoodCart.Entities.Order;
-import com.FoodCart.Entities.PaymentResponseDTO;
+import com.FoodCart.Response.PaymentResponseDTO;
 import com.FoodCart.Entities.UserEntity;
 import com.FoodCart.Exceptions.CartException;
 import com.FoodCart.Exceptions.OrderException;

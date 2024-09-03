@@ -1,4 +1,4 @@
-package com.FoodCart.Entities;
+package com.FoodCart.Response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

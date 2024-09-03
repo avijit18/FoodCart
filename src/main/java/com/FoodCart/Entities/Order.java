@@ -22,6 +22,7 @@ public class Order {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "customer_id", nullable = false)
     private UserEntity customer;
 
     @JsonIgnore

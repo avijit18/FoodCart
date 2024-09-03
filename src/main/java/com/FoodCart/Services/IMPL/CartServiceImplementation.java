@@ -26,7 +26,7 @@ public class CartServiceImplementation implements CartService {
     private final CartRepository cartRepository;
     private final UserService userService;
     private final CartItemRepository CartItemRepository;
-    private FoodRepository menuItemRepository;
+    private final FoodRepository menuItemRepository;
 
 
     @Override

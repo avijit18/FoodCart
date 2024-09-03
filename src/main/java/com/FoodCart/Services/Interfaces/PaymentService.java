@@ -1,7 +1,7 @@
 package com.FoodCart.Services.Interfaces;
 
 import com.FoodCart.Entities.Order;
-import com.FoodCart.Entities.PaymentResponseDTO;
+import com.FoodCart.Response.PaymentResponseDTO;
 import com.stripe.exception.StripeException;
 
 public interface PaymentService {
