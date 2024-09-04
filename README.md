@@ -40,7 +40,7 @@ http://foodcart-env.ap-south-1.elasticbeanstalk.com/swagger-ui/index.html
 # Project Description:
 ## Controllers:
 + **Restaurant Controller:** Handles actions related to restaurants, including fetching details, searching, and adding favorites.
-+ **Cart Controller:**: Manages user carts, including adding items, updating quantities, clearing the cart, and calculating the total.
++ **Cart Controller:** Manages user carts, including adding items, updating quantities, clearing the cart, and calculating the total.
 + **Admin Restaurant Controller:** Provides administrative functions for managing restaurants, including creating, updating, deleting, and changing status.
 + **Admin Order Controller:** Allows administrators to manage orders, including changing status, retrieving orders by restaurant, and deleting orders.
 + **Admin Menu Item Controller:** Allows administrators to manage menu items (food) by creating, updating, deleting, and searching.
