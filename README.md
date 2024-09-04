@@ -37,7 +37,66 @@ http://foodcart-env.ap-south-1.elasticbeanstalk.com/swagger-ui/index.html
 + **Deployment:** AWS
 + **Notifications:** Email notifications for events and order updates
 
+# Project Description:
+## Controllers:
++ **Restaurant Controller:** Handles actions related to restaurants, including fetching details, searching, and adding favorites.
++ **Cart Controller:**: Manages user carts, including adding items, updating quantities, clearing the cart, and calculating the total.
++ **Admin Restaurant Controller:** Provides administrative functions for managing restaurants, including creating, updating, deleting, and changing status.
++ **Admin Order Controller:** Allows administrators to manage orders, including changing status, retrieving orders by restaurant, and deleting orders.
++ **Admin Menu Item Controller:** Allows administrators to manage menu items (food) by creating, updating, deleting, and searching.
++ **Ingredients Controller:** Provides administrative functions for managing ingredients, including adding, updating, deleting, and managing stock.
++ **Auth Controller:** Handles user authentication using JWT token for login and signup.
++ **Review Controller:** Manages customer reviews, allowing posting, fetching, and deleting.
++ **Order Controller:** Handles order creation and retrieval by user.
++ **Event Controller:** Allows administrators to manage events for specific restaurants, including adding, retrieving, and deleting events.
++ **Category Controller:** Provides functions for managing food categories, including adding and fetching categories for a specific restaurant.
++ **User Controller:** Allows fetching user profile information.
++ **Super Admin Controller:** Provides administrative access for managing pending customers and customers.
++ **Payment Controller:** Handles payment success notifications for orders.
++ **Notification Controller:** Provides functionality to fetch notifications.
++ **Menu Item Controller:** Allows fetching menu items (food) by search and restaurant.
 
+## Database Diagram
+![FoodCart_DB_diagram](https://github.com/user-attachments/assets/b312d0db-0ce3-44d7-8d04-01de5ead85b3)
+
+### The database diagram shows the entities and relationships within the system:
++ **User:** Represents users of the system with details like name, email, and role.
++ **Restaurant:** Stores information about restaurants, including details, ratings, address, and opening hours.
++ **Category:** Represents categories for menu items (food).
++ **Food:** Represents menu items, including details, availability, and category.
++ **Ingredients:** Stores information about ingredients used in the menu items.
++ **Cart:** Represents a shopping cart associated with a user.
++ **Cart Item:** Contains details of items in the user's cart.
++ **Orders:** Contains details about placed orders, including items, status, and customer information.
++ **Order Items:** Details about items included in an order.
++ **Payment:** Records payment information related to an order.
++ **Review:** Stores customer reviews for restaurants.
++ **Event:** Represents events associated with a specific restaurant.
++ **Notification:** Stores notifications for users.
++ **Address:** Stores address details for restaurants and users.
++ **User Entity Favorites:** Represents user's favorite restaurants.
++ **Food Images:** Stores images related to menu items.
++ **Restaurant Images:** Stores images for restaurants.
+
+## Database Relationships:
+### One-to-many relationships exist between:
++ User and Restaurant (user can have multiple favorite restaurants)
++ User and Cart (user can have a single cart)
++ Restaurant and Food (restaurant can have multiple food items)
++ Food and Ingredient (food can have multiple ingredients)
++ Food and Food Images (food can have multiple images)
++ Restaurant and Restaurant Images (restaurant can have multiple images)
++ Order and Order Item (order can have multiple order items)
++ Restaurant and Event (restaurant can have multiple events)
++ Restaurant and Category (restaurant can have multiple categories)
++ Order and Payment (order can have one payment)
++ User and Notification (user can have multiple notifications)
+
+
+### Many-to-many relationships exist between:
++ User and Address (user can have multiple addresses and one address can be shared by multiple users)
++ User and Restaurant (user can be associated with multiple restaurants and a restaurant can be associated with multiple users)
++ Food and Ingredient (food can contain multiple ingredients, and an ingredient can be used in multiple foods)
 
 # Why I Created This Project:
 FoodCart reflects my passion for coding and my commitment to developing practical solutions that can have a positive impact on users' daily lives. It’s a project that merges my technical skills with my enthusiasm for solving real-world problems in the food industry.
@@ -110,8 +169,6 @@ Please reach out to me at patra.ap.work@gmail.com
 
 - [@Avijit Patra](https://github.com/avijit18)
 
-## Database Flow Diagram
-![FoodCart_DB_diagram](https://github.com/user-attachments/assets/b312d0db-0ce3-44d7-8d04-01de5ead85b3)
 
 ## Swagger Images
 ![swagger_demo_1](https://github.com/user-attachments/assets/1bbfedcb-20de-4607-aa2d-2b9d6db4d378)
