@@ -110,7 +110,7 @@ Please reach out to me at patra.ap.work@gmail.com
 
 - [@Avijit Patra](https://github.com/avijit18)
 
-## Database Diagram
+## Database Flow Diagram
 ![FoodCart_DB_diagram](https://github.com/user-attachments/assets/b312d0db-0ce3-44d7-8d04-01de5ead85b3)
 
 ## Swagger Images
