@@ -1,4 +1,4 @@
-# FoodCart - Spring Boot Project
+# FoodCart - Food Delivery App(Spring Boot)
 
 #### FoodCart is a cutting-edge online food delivery platform designed to bridge the gap between passionate food enthusiasts and diverse dining experiences. Whether you’re a restaurant owner looking to expand your reach or a foodie searching for the perfect meal, FoodCart offers a seamless, intuitive, and secure environment for everyone. With its robust multi-vendor system, tailored admin panels, and user-friendly features, FoodCart redefines the online dining experience, making it not just a service, but a community.
 
@@ -32,7 +32,7 @@ http://foodcart-env.ap-south-1.elasticbeanstalk.com/swagger-ui/index.html
 # Technologies Used:
 + **Back-End:** Spring Boot, Spring Security, Spring Data JPA
 + **Database:** MySQL
-+ **Payment Gateway:**: Stripe
++ **Payment Gateway:** Stripe
 + **Authentication:** JWT, Spring Security
 + **Deployment:** AWS
 + **Notifications:** Email notifications for events and order updates
