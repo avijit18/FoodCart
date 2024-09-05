@@ -7,8 +7,7 @@ http://foodcart-env.ap-south-1.elasticbeanstalk.com/swagger-ui/index.html
 
 # Key Features:
 
-  + **Multi-vendor Support:** A diverse marketplace where multiple restaurants can register and showcase their menus, offering users a wide range of dining options.
-
++ **Multi-vendor Support:** A diverse marketplace where multiple restaurants can register and showcase their menus, offering users a wide range of dining options.
 + **Tailored Admin Panels:** Restaurant owners get a specialized admin panel to manage their listings, orders, and events, while the platform owner benefits from a comprehensive super admin panel.
 + **Role-based Access Control:** Securely manage different user roles **(admin, restaurant owner, customer)** ensuring a controlled and safe environment.
 + **User-friendly Functions:** Enhance user experience with features like ‘**Add to Favorite**,’ ‘**Add to Cart**,’ ‘**Remove from Cart**,’ and more.
@@ -20,14 +19,6 @@ http://foodcart-env.ap-south-1.elasticbeanstalk.com/swagger-ui/index.html
 + **Authentication:** JWT tokens are used for secure authentication and session management.
 + **Authorization:** Role-based access control is implemented to manage permissions, ensuring that only authorized users can perform specific actions.
 + **Data Encryption:** Sensitive data, including passwords and payment details, is encrypted to protect user information from unauthorized access.
-
-
-# Planned Future Enhancements:
-+ **Password Reset via Email:** Implementing a secure and convenient method for users to reset their passwords through email.
-+ **UI/UX Improvements:** Introducing a responsive and visually appealing frontend interface to complement the backend functionalities.
-+ **Event Feature Enhancements:** Expanding the event creation and management capabilities, allowing restaurants to offer more dynamic and interactive experiences. Future updates will include more detailed event descriptions, customizable notifications, and user engagement tracking.
-+ **Review System Enhancements:** Improving the review and rating system to include more granular feedback options, verified reviews, and sentiment analysis. This will provide more accurate and meaningful insights for both restaurants and customers.
-
 
 # Technologies Used:
 + **Back-End:** Spring Boot, Spring Security, Spring Data JPA
@@ -160,6 +151,12 @@ spring.datasource.password=your_password
 
 # Contribute:
 Feel free to contribute to this project by submitting issues, suggesting features, or creating pull requests. Your input is valuable to make this tool even better! 😃
+
+# Planned Future Enhancements:
++ **Password Reset via Email:** Implementing a secure and convenient method for users to reset their passwords through email.
++ **UI/UX Improvements:** Introducing a responsive and visually appealing frontend interface to complement the backend functionalities.
++ **Event Feature Enhancements:** Expanding the event creation and management capabilities, allowing restaurants to offer more dynamic and interactive experiences. Future updates will include more detailed event descriptions, customizable notifications, and user engagement tracking.
++ **Review System Enhancements:** Improving the review and rating system to include more granular feedback options, verified reviews, and sentiment analysis. This will provide more accurate and meaningful insights for both restaurants and customers.
 
 ## Feedback
 I appreciate your feedback! Please open an issue on GitHub if you encounter any problems or have suggestions for improvement. Your feedback helps enhance the project for everyone.
