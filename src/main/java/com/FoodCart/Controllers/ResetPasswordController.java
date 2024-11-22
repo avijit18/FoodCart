@@ -1,15 +1,10 @@
 package com.FoodCart.Controllers;
 
-import com.FoodCart.Advices.ApiResponse;
-import com.FoodCart.Entities.PasswordResetToken;
-import com.FoodCart.Entities.UserEntity;
-import com.FoodCart.Exceptions.UserException;
-import com.FoodCart.Requests.ResetPasswordRequest;
 import com.FoodCart.Services.Interfaces.PasswordResetTokenService;
 import com.FoodCart.Services.Interfaces.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
